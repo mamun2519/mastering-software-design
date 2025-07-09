@@ -28,14 +28,26 @@ class InvoiceProcessor {
         Console.WriteLine("Invoice amount {0}", invoice.InvoiceAmount);
         Console.WriteLine("Customer name {0}", invoice.CustomerName);
     }
-    public void SendEmail(string emailAddress, string message){
-        _sendEmail.Send(emailAddress, message);
-    }
-    public void GenerateFDF(string invoiceNumber){
-        _generateFDF.Generate(invoiceNumber);
-    }
    
 }
+
+class InvoiceEmailSender {
+    private readonly SendEmail _sendEmail = new SendEmail();
+
+    public void Send(Invoice invoice, string emailAddress){
+        string message = $"Invoice #{invoice.InvoiceNumber} is ready.";
+        _sendEmail.Send(emailAddress, message);
+    }
+}
+
+class InvoicePDFGenerator {
+    private readonly GenerateFDF _generateFDF = new GenerateFDF();
+
+    public void Generate(Invoice invoice){
+        _generateFDF.Generate(invoice.InvoiceNumber);
+    }
+}
+
 
 class Program
 {
@@ -49,8 +61,10 @@ class Program
         invoice.CustomerName = "John Doe";
         InvoiceProcessor processor = new InvoiceProcessor();
         processor.Process(invoice);
-        processor.SendEmail("john.doe@email.com", "Your invoice is ready");
-        processor.GenerateFDF(invoice.InvoiceNumber);
+        InvoiceEmailSender emailSender = new InvoiceEmailSender();
+        emailSender.Send(invoice, "john.doe@example.com");
+        InvoicePDFGenerator pdfGenerator = new InvoicePDFGenerator();
+        pdfGenerator.Generate(invoice);  
         
 
      
