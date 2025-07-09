@@ -42,7 +42,7 @@ class Program
 
 
 
-        User user = new User();
+    
       
        
     }
