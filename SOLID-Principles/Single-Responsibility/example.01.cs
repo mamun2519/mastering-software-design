@@ -18,13 +18,4 @@ class UserService
     }
 }
 
-class SendEmail
-{
-    public void sendEmail(User user)
-    {
-        // send email
-        Console.WriteLine("Email sent to", user.email);
-    }
-}
-
 
