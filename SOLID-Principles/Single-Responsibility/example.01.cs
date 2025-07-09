@@ -28,10 +28,3 @@ class SendEmail
 }
 
 
-class ReportFileSaver
-{
-    public void saveToFile(GoodReport report, string fileName)
-    {
-        System.IO.File.WriteAllText(fileName, report.content);
-    }
-}
