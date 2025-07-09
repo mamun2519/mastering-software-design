@@ -43,10 +43,7 @@ class Program
 
 
         User user = new User();
-        user.name = "John";
-        user.email = "john@doe.com";
-        user.password = "123456";
-        UserService userService = new UserService();
+      
        
     }
 }
