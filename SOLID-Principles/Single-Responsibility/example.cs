@@ -2,11 +2,7 @@ using System;
 
 
 
-class SendEmail {
-    public void Send(string emailAddress, string message){
-        Console.WriteLine("Sending email to {0} with message {1}", emailAddress, message);
-    }
-}
+
 
 class GenerateFDF {
     public void Generate(string invoiceNumber){
