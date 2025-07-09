@@ -47,8 +47,6 @@ class Program
         user.email = "john@doe.com";
         user.password = "123456";
         UserService userService = new UserService();
-        userService.register(user);
-        SendEmail sendEmail = new SendEmail();
-        sendEmail.sendEmail(user);
+       
     }
 }
