@@ -1,11 +1,6 @@
 using System;
 
-class Invoice {
-    public string InvoiceNumber { get; set; }
-    public DateTime InvoiceDate { get; set; }
-    public decimal InvoiceAmount { get; set; }
-    public  string CustomerName { get; set; }
-}
+
 
 class SendEmail {
     public void Send(string emailAddress, string message){
