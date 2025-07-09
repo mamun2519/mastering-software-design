@@ -35,15 +35,3 @@ class ReportFileSaver
         System.IO.File.WriteAllText(fileName, report.content);
     }
 }
-class Program
-{
-    public static void Main(string[] args)
-    {
-
-
-
-    
-      
-       
-    }
-}
