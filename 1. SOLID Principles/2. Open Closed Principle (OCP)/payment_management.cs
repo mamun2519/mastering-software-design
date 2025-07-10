@@ -6,14 +6,6 @@ using System;
 
 
 
-class Rocket : IpaymentProcessor
-{
-    public void makePayment()
-    {
-        Console.WriteLine("Rocket Payment");
-    }
-}
-
 class GooDPaymentServices
 {
     public IpaymentProcessor _paymentProcessor;
