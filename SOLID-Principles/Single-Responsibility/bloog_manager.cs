@@ -3,13 +3,7 @@ using System;
 
 
 
-class EmailService {
-      public void sendEmail(Blog blog){
-          Console.WriteLine("Title: " + blog.Title);
-          Console.WriteLine("Author: " + blog.Author);
-          Console.WriteLine("Content: " + blog.Content);
-      }
-}
+
 class Program
 {
     public static void Main(string[] args)
