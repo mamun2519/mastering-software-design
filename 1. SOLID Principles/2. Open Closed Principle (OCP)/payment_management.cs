@@ -14,11 +14,7 @@ class Program
     {
 
         
-        // good code
-        GooDPaymentServices gooDPaymentServices = new GooDPaymentServices(new Bikash());
-        gooDPaymentServices.makePayment();
-        gooDPaymentServices = new GooDPaymentServices(new Nagad());
-        gooDPaymentServices.makePayment();
+       
     }
 
 }
