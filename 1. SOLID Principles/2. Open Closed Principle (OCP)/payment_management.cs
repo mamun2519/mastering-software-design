@@ -6,18 +6,7 @@ using System;
 
 
 
-class GooDPaymentServices
-{
-    public IpaymentProcessor _paymentProcessor;
-    public GooDPaymentServices(IpaymentProcessor paymentProcessor)
-    {
-        this._paymentProcessor = paymentProcessor;
-    }
-    public void makePayment()
-    {
-        _paymentProcessor.makePayment();
-    }
-}
+
 
 class Program
 {
