@@ -5,13 +5,7 @@ using System;
 
 
 
-class Nagad : IpaymentProcessor
-{
-    public void makePayment()
-    {
-        Console.WriteLine("Nagad Payment");
-    }
-}
+
 class Rocket : IpaymentProcessor
 {
     public void makePayment()
