@@ -10,8 +10,6 @@ class Program
     {
 
      
-      
-        EmailService emailService = new EmailService();
-        emailService.sendEmail(blog);
+     
     }
 }
