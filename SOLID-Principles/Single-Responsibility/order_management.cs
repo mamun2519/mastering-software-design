@@ -1,11 +1,7 @@
 using System;
 
 
-class EmailServices {
-    public void SendEmail(Order order){
-        Console.WriteLine("Email sent for " + order.orderEmail);
-    }
-}
+
 
 class Program
 {
