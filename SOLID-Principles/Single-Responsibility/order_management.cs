@@ -9,9 +9,6 @@ class Program
     {
 
  
-        orderServices.PlaceOrder(order);
-        orderRepository.Save(order);
-        emailServices.SendEmail(order);
      
     }
 }
