@@ -4,13 +4,7 @@ using System;
 
 
 
-class Bikash : IpaymentProcessor
-{
-    public void makePayment()
-    {
-        Console.WriteLine("Bkash Payment");
-    }
-}
+
 class Nagad : IpaymentProcessor
 {
     public void makePayment()
