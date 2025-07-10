@@ -1,11 +1,6 @@
 using System;
 
 
-class ValidaitonManagement {
-    public bool Validate(Customer customer){
-        return true;
-    }
-}
 class CustomerManagement {
     public void Save(Customer customer){
         ValidaitonManagement vm = new ValidaitonManagement();
