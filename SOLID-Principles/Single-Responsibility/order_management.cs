@@ -1,5 +1,9 @@
 using System;
 
+class Order {
+    public string orderNumber { get; set; }
+    public string orderEmail { get; set; }
+}
 
 class OrderServices {
     public void PlaceOrder(Order order){
