@@ -3,11 +3,7 @@ using System;
 //bed code
 
 
-// good code using OCP
-interface IpaymentProcessor
-{
-    void makePayment();
-}
+
 class Bikash : IpaymentProcessor
 {
     public void makePayment()
