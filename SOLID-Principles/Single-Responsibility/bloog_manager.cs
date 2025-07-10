@@ -2,13 +2,7 @@ using System;
 
 
 
-class PostRepository {
-      public void savePost(Blog blog){
-          Console.WriteLine("Title: " + blog.Title);
-          Console.WriteLine("Author: " + blog.Author);
-          Console.WriteLine("Content: " + blog.Content);
-      }
-}
+
 class EmailService {
       public void sendEmail(Blog blog){
           Console.WriteLine("Title: " + blog.Title);
