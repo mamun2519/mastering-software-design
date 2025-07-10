@@ -10,9 +10,7 @@ class Program
     {
 
      
-        postServices.createPost(blog);
-        PostRepository postRepository = new PostRepository();
-        postRepository.savePost(blog);
+      
         EmailService emailService = new EmailService();
         emailService.sendEmail(blog);
     }
