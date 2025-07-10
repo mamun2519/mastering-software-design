@@ -99,6 +99,8 @@ var notifier = new NotificationService(new EmailNotifier());
 notifier.Notify("Hello, OCP!");
 ```
 
+➡️ এখন WhatsApp বা Facebook Message Add করতে চাইলে শুধু নতুন class implement করলেই হবে — পুরনো NotificationService একদম touch করা লাগবে না!
+
 ### 🎯 Strategy Pattern & OCP
 
 OCP মানতে গিয়ে আমরা প্রায়ই Strategy Pattern ব্যবহার করি —
