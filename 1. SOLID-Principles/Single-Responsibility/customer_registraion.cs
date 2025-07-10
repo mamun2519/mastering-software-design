@@ -2,12 +2,7 @@ using System;
 
 
 
-class EmailManagement {
-    public void SendEmail(Customer customer){
-        //send email
-        Console.WriteLine("Email sent successfully");
-    }
-}
+
 class Program
 {
     public static void Main(string[] args)
