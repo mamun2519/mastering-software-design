@@ -1,13 +1,6 @@
 using System;
 
 
-
-class OrderRepository {
-    public void Save(Order order){
-        Console.WriteLine("Order saved for " + order.orderEmail);
-    }
-}
-
 class EmailServices {
     public void SendEmail(Order order){
         Console.WriteLine("Email sent for " + order.orderEmail);
