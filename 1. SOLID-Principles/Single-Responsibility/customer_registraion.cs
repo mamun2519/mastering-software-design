@@ -1,15 +1,7 @@
 using System;
 
 
-class CustomerManagement {
-    public void Save(Customer customer){
-        ValidaitonManagement vm = new ValidaitonManagement();
-        if(vm.Validate(customer)){
-            //save to database
-            Console.WriteLine("Customer saved successfully");
-        }
-    }
-}
+
 class EmailManagement {
     public void SendEmail(Customer customer){
         //send email
