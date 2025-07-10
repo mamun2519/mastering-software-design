@@ -1,11 +1,6 @@
 using System;
 
 
-class OrderServices {
-    public void PlaceOrder(Order order){
-        Console.WriteLine("Order placed for " + order.orderEmail);
-    }
-}
 
 class OrderRepository {
     public void Save(Order order){
