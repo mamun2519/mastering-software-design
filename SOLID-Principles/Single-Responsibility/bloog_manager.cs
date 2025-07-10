@@ -1,13 +1,7 @@
 using System;
 
 
-class PostServices {
-      public void createPost(Blog blog){
-          Console.WriteLine("Title: " + blog.Title);
-          Console.WriteLine("Author: " + blog.Author);
-          Console.WriteLine("Content: " + blog.Content);
-      }
-}
+
 class PostRepository {
       public void savePost(Blog blog){
           Console.WriteLine("Title: " + blog.Title);
