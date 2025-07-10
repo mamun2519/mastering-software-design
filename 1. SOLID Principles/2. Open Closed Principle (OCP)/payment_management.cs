@@ -1,26 +1,7 @@
 using System;
 
 //bed code
-class PaymentServices
-{
-    public string method;
 
-    public void makePayment()
-    {
-        if (method == "Bkash")
-        {
-            Console.WriteLine("Bkash Payment");
-        }
-        else if (method == "Nagad")
-        {
-            Console.WriteLine("Nagad Payment");
-        }
-        else if (method == "Rocket")
-        {
-            Console.WriteLine("Rocket Payment");
-        }
-    }
-}
 
 // good code using OCP
 interface IpaymentProcessor
