@@ -1,21 +1,6 @@
 using System;
 
 
-// bed code
-class Shape {
-    public string Type;
-}
-
-class AreaCalculator {
-    public void CalculateArea(Shape shape) {
-        if (shape.Type == "Circle") {
-            // calculate for circle
-        } else if (shape.Type == "Rectangle") {
-            // calculate for rectangle
-        }
-        // etc...
-    }
-}
 // good code
 interface IShape {
     void CalculateArea();
