@@ -1,11 +1,7 @@
 using System;
 
 
-class FileLogger : Ilogger{
-    public void Log(string message){
-        Console.WriteLine("FileLogger: " + message);
-    }
-}
+
 class CloudLogger : Ilogger{
     public void Log(string message){
         Console.WriteLine("CloudLogger: " + message);
