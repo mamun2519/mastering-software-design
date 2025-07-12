@@ -1,6 +1,12 @@
 using System;
 
 
+class ConsoleLogger : Ilogger{
+    public void Log(string message){
+        Console.WriteLine(message);
+    }
+}
+
 class FileLogger : Ilogger{
     public void Log(string message){
         Console.WriteLine("FileLogger: " + message);
