@@ -3,12 +3,7 @@ using System;
 
 
 
-class Rectangle : IShape{
-        public void CalculateArea(){
-            // calculate for rectangle
-            Console.WriteLine("Rectangle");
-        }
-}
+
 class Triangle : IShape{
         public void CalculateArea(){
             // calculate for triangle
