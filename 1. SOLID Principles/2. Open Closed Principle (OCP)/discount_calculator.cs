@@ -2,11 +2,7 @@ using System;
 
 // bed code
 
-class PremiumCustomer : ICustomer{
-    public void CalculateDiscount(double price, int quantity, string method){
-        Console.WriteLine(price * quantity * 0.8);
-    }
-}
+
 class VIPCustomer : ICustomer{
     public void CalculateDiscount(double price, int quantity, string method){
         Console.WriteLine(price * quantity * 0.7);
