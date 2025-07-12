@@ -2,6 +2,13 @@ using System;
 
 // bed code
 
+
+
+class RegularCustomer : ICustomer{
+    public void CalculateDiscount(double price, int quantity, string method){
+        Console.WriteLine(price * quantity * 0.9);
+    }
+}
 class PremiumCustomer : ICustomer{
     public void CalculateDiscount(double price, int quantity, string method){
         Console.WriteLine(price * quantity * 0.8);
