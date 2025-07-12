@@ -2,10 +2,7 @@ using System;
 
 // bed code
 
-// good code
-interface ICustomer{
-    void CalculateDiscount(double price, int quantity, string method);
-}
+
 
 class RegularCustomer : ICustomer{
     public void CalculateDiscount(double price, int quantity, string method){
