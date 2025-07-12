@@ -1,17 +1,7 @@
 using System;
 
 
-// good code
-interface IShape {
-    void CalculateArea();
-}
 
-class Circle : IShape {
-        public void CalculateArea(){
-            // calculate for circle
-            Console.WriteLine("Circle");
-        }
-}
 
 class Rectangle : IShape{
         public void CalculateArea(){
