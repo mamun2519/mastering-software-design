@@ -1,6 +1,8 @@
 using System;
 
-
+interface IReportGenerator {
+    void generateReport();
+}
 
 class pdfReportGenerator : IReportGenerator{
     public void generateReport(){
