@@ -1,16 +1,5 @@
 using System;
 
-
-class ReportService {
-    private IReportGenerator reportGenerator;
-    public ReportService (IReportGenerator reportGenerator){
-        this.reportGenerator = reportGenerator;
-    }
-    public void generateReport(){
-        reportGenerator.generateReport();
-    }
-}
-
 class Program
 {
     public static void Main(string[] args)
