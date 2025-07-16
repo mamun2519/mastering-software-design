@@ -1,6 +1,18 @@
 using System;
 
 
+
+class pdfReportGenerator : IReportGenerator{
+    public void generateReport(){
+        Console.WriteLine("Generating PDF Report");
+    }
+}
+class ExcelReportGenerator : IReportGenerator{
+    public void generateReport(){
+        Console.WriteLine("Generating Excel Report");
+    }
+}
+
 class ReportService {
     private IReportGenerator reportGenerator;
     public ReportService (IReportGenerator reportGenerator){
