@@ -51,10 +51,4 @@ interface IFeedable {
 class HumanWorker : IWorkable, IFeedable {
     public void Work() => Console.WriteLine("Human is working");
     public void Eat() => Console.WriteLine("Human is eating");
-}
-
-class RobotWorker : IWorkable {
-    public void Work() => Console.WriteLine("Robot is working");
-}
-
 ```
