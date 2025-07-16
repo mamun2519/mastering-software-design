@@ -1,10 +1,6 @@
 using System;
 
-class EmailNotificationSender : INotificationSender {
-    public void send(string message){
-        Console.WriteLine("Email: " + message);
-    }
-}
+
 class SMSNotificationSender : INotificationSender {
     public void send(string message){
         Console.WriteLine("SMS: " + message);
