@@ -93,4 +93,4 @@ Wrong
 right
 
 - ✅ তারা দুজনেই নির্ভর করবে Interface বা Abstract class-এর উপর
-- শুধু দরকারি interface implement কর
+- ✅ Details (implementation) → Interface implement করবে
