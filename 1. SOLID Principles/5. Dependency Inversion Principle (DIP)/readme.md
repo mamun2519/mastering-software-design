@@ -13,20 +13,18 @@ Abstractions should not depend on details. Details should depend on abstractions
 
 ```cpp
 
-interface IWorker {
-    void Work();
-    void Eat();
+class BkashPayment {
+    public void Pay() => Console.WriteLine("Paying with Bkash");
 }
 
-class HumanWorker : IWorker {
-    public void Work() => Console.WriteLine("Human is working");
-    public void Eat() => Console.WriteLine("Human is eating");
+class PaymentService {
+    private BkashPayment _bkash = new BkashPayment();
+
+    public void MakePayment() {
+        _bkash.Pay();  // tightly coupled
+    }
 }
 
-class RobotWorker : IWorker {
-    public void Work() => Console.WriteLine("Robot is working");
-    public void Eat() => throw new NotImplementedException();  // ❌ Robot তো খায় না!
-}
 
 
 ```
