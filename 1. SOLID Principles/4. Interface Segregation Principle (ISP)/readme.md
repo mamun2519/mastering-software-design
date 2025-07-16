@@ -58,8 +58,3 @@ class RobotWorker : IWorkable {
 }
 
 ```
-
-➡️ এখন যার যেটা দরকার, সে শুধু সেটাই implement করছে — ফোর্স করছে না কিছু!
-এইটাই হলো Interface Segregation Principle ✅
-
-➡️ এখন WhatsApp বা Facebook Message Add করতে চাইলে শুধু নতুন class implement করলেই হবে — পুরনো NotificationService একদম touch করা লাগবে না!
