@@ -66,7 +66,20 @@ class PaymentService {
 
 ```
 
-###
+### Main Program
+
+```cs
+class Program {
+    public static void Main(string[] args) {
+        PaymentService service = new PaymentService(new BkashPayment());
+        service.MakePayment();
+
+        service = new PaymentService(new NagadPayment());
+        service.MakePayment();
+    }
+}
+
+```
 
 ➡️ এখন যার যেটা দরকার, সে শুধু সেটাই implement করছে — ফোর্স করছে না কিছু!
 এইটাই হলো Interface Segregation Principle ✅
