@@ -1,7 +1,11 @@
 using System;
 
 
-
+class SMSNotificationSender : INotificationSender {
+    public void send(string message){
+        Console.WriteLine("SMS: " + message);
+    }
+}
 
 class NotificationService {
     private INotificationSender _notificationSender;
