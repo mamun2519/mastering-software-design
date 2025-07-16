@@ -88,10 +88,9 @@ class Program {
 
 Wrong
 
-- বড় ইন্টারফেসে সব ফাংশন জোর করে বসানো
-- যেটা ক্লাস ব্যবহার করে না, সেটাও ইমপ্লিমেন্ট
+- ❌ High-level class → Low-level class-এ নির্ভর করবে না
 
 right
 
-- ছোট ছোট, ভাগ করা ইন্টারফেস বানাও
+- ✅ তারা দুজনেই নির্ভর করবে Interface বা Abstract class-এর উপর
 - শুধু দরকারি interface implement কর
