@@ -33,22 +33,3 @@ class RobotWorker : IWorker {
 
 ➡️ এখানে Robot-কে Eat() method ইমপ্লিমেন্ট করতে বাধ্য করা হয়েছে — অথচ সে তো খায়ই না!
 এটাই ISP violation।
-
-### ISP ঠিক রাখার উপায়:
-
-✅ ভালো ডিজাইন:
-
-```cpp
-
-interface IWorkable {
-    void Work();
-}
-
-interface IFeedable {
-    void Eat();
-}
-
-class HumanWorker : IWorkable, IFeedable {
-    public void Work() => Console.WriteLine("Human is working");
-    public void Eat() => Console.WriteLine("Human is eating");
-```
