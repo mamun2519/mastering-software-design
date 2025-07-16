@@ -35,26 +35,38 @@ class PaymentService {
 
 ➡️ আমরা একটা interface (abstraction) তৈরি করব, এবং PaymentService ওই interface-এর উপর নির্ভর করবে, কোনো নির্দিষ্ট implementation-এর উপর নয়।ISP ঠিক রাখার উপায়:
 
+### DIP-Compliant Version:
+
 ```cpp
 
-interface IWorkable {
-    void Work();
+interface IPaymentMethod {
+    void Pay();
 }
 
-interface IFeedable {
-    void Eat();
+class BkashPayment : IPaymentMethod {
+    public void Pay() => Console.WriteLine("Bkash Payment");
 }
 
-class HumanWorker : IWorkable, IFeedable {
-    public void Work() => Console.WriteLine("Human is working");
-    public void Eat() => Console.WriteLine("Human is eating");
+class NagadPayment : IPaymentMethod {
+    public void Pay() => Console.WriteLine("Nagad Payment");
 }
 
-class RobotWorker : IWorkable {
-    public void Work() => Console.WriteLine("Robot is working");
+class PaymentService {
+    private IPaymentMethod _payment;
+
+    public PaymentService(IPaymentMethod payment) {
+        _payment = payment;
+    }
+
+    public void MakePayment() {
+        _payment.Pay();  // depends on abstraction
+    }
 }
+
 
 ```
+
+###
 
 ➡️ এখন যার যেটা দরকার, সে শুধু সেটাই implement করছে — ফোর্স করছে না কিছু!
 এইটাই হলো Interface Segregation Principle ✅
