@@ -1,5 +1,9 @@
 using System;
 
+interface INotificationSender{
+ void send(string message);
+}
+
 class EmailNotificationSender : INotificationSender {
     public void send(string message){
         Console.WriteLine("Email: " + message);
