@@ -21,3 +21,14 @@ class PaymentService {
         _payment.Pay();  // depends on abstraction
     }
 }
+
+class Program {
+    public static void Main(string[] args) {
+        PaymentService service = new PaymentService(new BkashPayment());
+        service.MakePayment();
+
+        service = new PaymentService(new NagadPayment());
+        service.MakePayment();
+    }
+}
+
