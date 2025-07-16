@@ -31,9 +31,9 @@ class PaymentService {
 
 ➡️ এখন যদি Bkash বাদ দিয়ে Nagad দিতে চাও, তাহলে PaymentService ক্লাসটা modify করতে হবে। এটি DIP ভঙ্গ করে।
 
-### ISP ঠিক রাখার উপায়:
+### ✅ DIP ঠিক করার উপায়:
 
-✅ ভালো ডিজাইন:
+➡️ আমরা একটা interface (abstraction) তৈরি করব, এবং PaymentService ওই interface-এর উপর নির্ভর করবে, কোনো নির্দিষ্ট implementation-এর উপর নয়।ISP ঠিক রাখার উপায়:
 
 ```cpp
 
