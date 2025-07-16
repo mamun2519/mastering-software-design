@@ -29,8 +29,7 @@ class PaymentService {
 
 ```
 
-➡️ এখানে Robot-কে Eat() method ইমপ্লিমেন্ট করতে বাধ্য করা হয়েছে — অথচ সে তো খায়ই না!
-এটাই ISP violation।
+➡️ এখন যদি Bkash বাদ দিয়ে Nagad দিতে চাও, তাহলে PaymentService ক্লাসটা modify করতে হবে। এটি DIP ভঙ্গ করে।
 
 ### ISP ঠিক রাখার উপায়:
 
