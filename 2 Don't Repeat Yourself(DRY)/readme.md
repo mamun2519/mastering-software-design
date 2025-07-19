@@ -63,5 +63,6 @@ Wrong
 
 right
 
-- ✅ তারা দুজনেই নির্ভর করবে Interface বা Abstract class-এর উপর
-- ✅ Details (implementation) → Interface implement করবে
+- ✅ ফাংশনে রেখে বারবার call করো
+- ✅ Constant বা Config use করো
+- ✅ Reusable বানিয়ে DRY follow করো
