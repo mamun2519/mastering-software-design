@@ -53,24 +53,6 @@ class InvoiceService {
 
 ➡️ এখন SendEmail() method একবার লিখেই দু’জায়গায় ব্যবহার করা হলো — এটা DRY principle।
 
-### Main Program
-
-```cs
-class Program {
-    public static void Main(string[] args) {
-        PaymentService service = new PaymentService(new BkashPayment());
-        service.MakePayment();
-
-        service = new PaymentService(new NagadPayment());
-        service.MakePayment();
-    }
-}
-
-```
-
-➡️ এখন তুমি যখনই নতুন payment system যোগ করবে, PaymentService class একদম না ছুঁয়ে কাজ হবে।
-এই হলো DIP: Abstraction-এর উপর নির্ভর করো, details-এর উপর নয়।
-
 ### 🧠 মূল কথা মনে রাখো:
 
 Wrong
