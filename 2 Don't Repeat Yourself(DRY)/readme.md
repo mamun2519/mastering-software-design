@@ -59,6 +59,7 @@ Wrong
 
 - একই কাজ ২ বার লেখা
 - Hardcoded value everywhere
+- Copy-paste করে কাজ চালানো
 
 right
 
