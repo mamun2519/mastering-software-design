@@ -1,4 +1,4 @@
-# 📘Dependency Inversion Principle (DIP)
+# 📘 Don't Repeat Yourself (DRY)
 
 ### 📌 📌 সংজ্ঞা (Definition):
 
