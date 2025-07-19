@@ -6,22 +6,18 @@
 
 বাংলায়: একই কোড বা লজিক বারবার লিখবে না। বরং সেটাকে একবার লিখে বারবার ব্যবহার করো।.
 
-### 🎯 সহজ ভাষায় বোঝি:
-
-ধরো, তুমি একটা অ্যাপ বানাও যেখানে PaymentService ক্লাস আছে।
-এই ক্লাস সরাসরি BkashPayment ক্লাসকে ডাকে। তাহলে PaymentService ক্লাসটা BkashPayment-এর উপর নির্ভরশীল হয়ে পড়ে — এটা DIP break করে।
+### ❌ Bad Example (DRY Violation):
 
 ```cpp
 
-class BkashPayment {
-    public void Pay() => Console.WriteLine("Paying with Bkash");
-}
+class InvoiceService {
+    public void GenerateInvoice() {
+        Console.WriteLine("Generating invoice...");
+        Console.WriteLine("Sending email to customer...");
+    }
 
-class PaymentService {
-    private BkashPayment _bkash = new BkashPayment();
-
-    public void MakePayment() {
-        _bkash.Pay();  // tightly coupled
+    public void SendReminder() {
+        Console.WriteLine("Sending email to customer...");
     }
 }
 
