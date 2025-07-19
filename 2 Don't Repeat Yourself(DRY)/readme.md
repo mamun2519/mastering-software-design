@@ -57,7 +57,7 @@ class InvoiceService {
 
 Wrong
 
-- ❌ High-level class → Low-level class-এ নির্ভর করবে না
+- একই কাজ ২ বার লেখা
 
 right
 
