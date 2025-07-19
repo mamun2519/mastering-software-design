@@ -31,33 +31,20 @@ class InvoiceService {
 
 ### ✅ Good Example (DRY Applied):
 
-➡️ আমরা একটা interface (abstraction) তৈরি করব, এবং PaymentService ওই interface-এর উপর নির্ভর করবে, কোনো নির্দিষ্ট implementation-এর উপর নয়।ISP ঠিক রাখার উপায়:
-
-### DIP-Compliant Version:
-
 ```cpp
 
-interface IPaymentMethod {
-    void Pay();
-}
-
-class BkashPayment : IPaymentMethod {
-    public void Pay() => Console.WriteLine("Bkash Payment");
-}
-
-class NagadPayment : IPaymentMethod {
-    public void Pay() => Console.WriteLine("Nagad Payment");
-}
-
-class PaymentService {
-    private IPaymentMethod _payment;
-
-    public PaymentService(IPaymentMethod payment) {
-        _payment = payment;
+class InvoiceService {
+    private void SendEmail() {
+        Console.WriteLine("Sending email to customer...");
     }
 
-    public void MakePayment() {
-        _payment.Pay();  // depends on abstraction
+    public void GenerateInvoice() {
+        Console.WriteLine("Generating invoice...");
+        SendEmail();
+    }
+
+    public void SendReminder() {
+        SendEmail();
     }
 }
 
