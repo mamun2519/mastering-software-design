@@ -29,7 +29,7 @@ class InvoiceService {
 
 এটা হচ্ছে code duplication — DRY break করে।
 
-### ✅ DIP ঠিক করার উপায়:
+### ✅ Good Example (DRY Applied):
 
 ➡️ আমরা একটা interface (abstraction) তৈরি করব, এবং PaymentService ওই interface-এর উপর নির্ভর করবে, কোনো নির্দিষ্ট implementation-এর উপর নয়।ISP ঠিক রাখার উপায়:
 
