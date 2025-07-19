@@ -25,7 +25,9 @@ class InvoiceService {
 
 ```
 
-➡️ এখন যদি Bkash বাদ দিয়ে Nagad দিতে চাও, তাহলে PaymentService ক্লাসটা modify করতে হবে। এটি DIP ভঙ্গ করে।
+➡️ এখানে SendReminder() আর GenerateInvoice() — দুটোতেই email পাঠানো একইভাবে আছে।
+
+এটা হচ্ছে code duplication — DRY break করে।
 
 ### ✅ DIP ঠিক করার উপায়:
 
