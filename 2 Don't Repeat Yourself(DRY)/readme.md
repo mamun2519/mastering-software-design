@@ -58,6 +58,7 @@ class InvoiceService {
 Wrong
 
 - একই কাজ ২ বার লেখা
+- Hardcoded value everywhere
 
 right
 
