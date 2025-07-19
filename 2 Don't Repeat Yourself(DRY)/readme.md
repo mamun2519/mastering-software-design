@@ -51,6 +51,8 @@ class InvoiceService {
 
 ```
 
+➡️ এখন SendEmail() method একবার লিখেই দু’জায়গায় ব্যবহার করা হলো — এটা DRY principle।
+
 ### Main Program
 
 ```cs
