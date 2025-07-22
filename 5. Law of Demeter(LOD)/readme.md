@@ -24,26 +24,26 @@ car.getEngine().getFuelInjector().inject()
 ### ❌ Bad Example:
 
 ```cpp
-class ReportService {
-    public void GenerateReport(string type) {
-        if (type == "pdf") {
-            Console.WriteLine("Generating PDF Report...");
-        } else if (type == "excel") {
-            Console.WriteLine("Generating Excel Report...");
-        } else if (type == "html") {
-            Console.WriteLine("Generating HTML Report...");
-        } else if (type == "csv") {
-            Console.WriteLine("Generating CSV Report...");
-        } else if (type == "json") {
-            Console.WriteLine("Generating JSON Report...");
-        }
+class Engine {
+    public FuelInjector GetFuelInjector() => new FuelInjector();
+}
+
+class Car {
+    public Engine GetEngine() => new Engine();
+}
+
+class Driver {
+    public void Drive(Car car) {
+        car.GetEngine().GetFuelInjector().Inject();  // ❌ Violates LoD
     }
 }
 
 
+
 ```
 
-🟥 এখানে এখনো requirement শুধু "pdf" আর "excel" এর জন্য। কিন্তু HTML, CSV, JSON future এ লাগতে পারে ভেবে এখনই বানিয়ে ফেলেছে — এটা YAGNI violation।
+এখানে Driver → Car → Engine → FuelInjector → Inject()
+এই গভীর চেইন যোগাযোগ ভালো না। এটা LoD ভঙ্গ করে।
 
 ### ✅ Good Code (Follow YAGNI):
 
