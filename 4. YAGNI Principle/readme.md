@@ -44,7 +44,7 @@ class ReportService {
 
 🟥 এখানে এখনো requirement শুধু "pdf" আর "excel" এর জন্য। কিন্তু HTML, CSV, JSON future এ লাগতে পারে ভেবে এখনই বানিয়ে ফেলেছে — এটা YAGNI violation।
 
-### ✅ KISS Code:
+### ✅ Good Code (Follow YAGNI):
 
 ```cpp
 public int Add(int a, int b){
