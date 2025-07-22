@@ -45,18 +45,31 @@ class Driver {
 এখানে Driver → Car → Engine → FuelInjector → Inject()
 এই গভীর চেইন যোগাযোগ ভালো না। এটা LoD ভঙ্গ করে।
 
-### ✅ Good Code (Follow YAGNI):
+### ✅ Good Example (LoD Respected):
 
 ```cpp
-class ReportService {
-    public void GenerateReport(string type) {
-        if (type == "pdf") {
-            Console.WriteLine("Generating PDF Report...");
-        } else if (type == "excel") {
-            Console.WriteLine("Generating Excel Report...");
-        }
+class FuelInjector {
+    public void Inject() => Console.WriteLine("Fuel Injected");
+}
+
+class Engine {
+    private FuelInjector _injector = new FuelInjector();
+
+    public void Start() => _injector.Inject();
+}
+
+class Car {
+    private Engine _engine = new Engine();
+
+    public void Start() => _engine.Start();
+}
+
+class Driver {
+    public void Drive(Car car) {
+        car.Start(); // ✅ Only talks to Car
     }
 }
+
 
 
 ```
