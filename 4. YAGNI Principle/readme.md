@@ -20,16 +20,22 @@ You Aren’t Gonna Need It
 
 - কোড clean ও maintainable রাখা
 
-### ❌ Complex Code (Not KISS):
+### উদাহরণ (Bad Code - Violating YAGNI):
 
 ```cpp
-public int Add(int a, int b){
-    if (a > 0 && b > 0){
-        return (a + b);
-    } else if (a < 0 || b < 0){
-        return (a + b);
-    } else {
-        return (a + b);
+class ReportService {
+    public void GenerateReport(string type) {
+        if (type == "pdf") {
+            Console.WriteLine("Generating PDF Report...");
+        } else if (type == "excel") {
+            Console.WriteLine("Generating Excel Report...");
+        } else if (type == "html") {
+            Console.WriteLine("Generating HTML Report...");
+        } else if (type == "csv") {
+            Console.WriteLine("Generating CSV Report...");
+        } else if (type == "json") {
+            Console.WriteLine("Generating JSON Report...");
+        }
     }
 }
 
