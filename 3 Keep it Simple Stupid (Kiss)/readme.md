@@ -1,4 +1,4 @@
-# 📘 Don't Repeat Yourself (DRY)
+# 🧠 KISS Principle মানে কী?
 
 ### 📌 📌 সংজ্ঞা (Definition):
 
