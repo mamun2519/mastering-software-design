@@ -19,15 +19,9 @@ car.getEngine().getFuelInjector().inject()
 
 ```
 
-### 🎯 লক্ষ্য:
+এটা bad practice। কারণ car অনেক 'stranger'-এর সাথে কথা বলছে। এতে কোড become tightly coupled and hard to maintain.
 
-- Overengineering কমানো
-
-- Time save করা
-
-- কোড clean ও maintainable রাখা
-
-### উদাহরণ (Bad Code - Violating YAGNI):
+### ❌ Bad Example:
 
 ```cpp
 class ReportService {
