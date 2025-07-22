@@ -78,8 +78,9 @@ class Driver {
 
 ✔️ Coupling কমেছে, Maintainability বেড়েছে।
 
-### 💡 বাস্তব জীবনে YAGNI কখন লাগে?
+### 🔧 Tips to Follow LoD:
 
-- Freelancing বা Software Company তে, client যদি A আর B চায়, তখন নিজের ইচ্ছায় C, D, E ফিচার বানানো waste.
-
-- কম্প্লেক্স সিস্টেম আগেভাগে বানাতে গেলে maintenance & bug বেড়ে যায়।
+- ✅ Avoid obj.getA().getB().doSomething()
+- ✅ Keep methods focused
+- ✅ Use delegation
+- ✅ Hide internal structure (Encapsulation)
