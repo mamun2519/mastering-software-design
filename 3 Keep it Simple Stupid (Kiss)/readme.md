@@ -6,21 +6,18 @@
 - 👉 জটিল করে না লিখে বুঝতে সহজ হয় এমন কোড লেখো
 - 👉 কোড অন্য কেউ পড়লে যেন মাথা ঘুরে না যায় 😅
 
-### ❌ Bad Example (DRY Violation):
+### ❌ Complex Code (Not KISS):
 
 ```cpp
-
-class InvoiceService {
-    public void GenerateInvoice() {
-        Console.WriteLine("Generating invoice...");
-        Console.WriteLine("Sending email to customer...");
-    }
-
-    public void SendReminder() {
-        Console.WriteLine("Sending email to customer...");
+public int Add(int a, int b){
+    if (a > 0 && b > 0){
+        return (a + b);
+    } else if (a < 0 || b < 0){
+        return (a + b);
+    } else {
+        return (a + b);
     }
 }
-
 
 
 ```
