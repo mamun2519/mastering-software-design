@@ -22,27 +22,11 @@ public int Add(int a, int b){
 
 ```
 
-➡️ এখানে SendReminder() আর GenerateInvoice() — দুটোতেই email পাঠানো একইভাবে আছে।
-
-এটা হচ্ছে code duplication — DRY break করে।
-
-### ✅ Good Example (DRY Applied):
+### ✅ KISS Code:
 
 ```cpp
-
-class InvoiceService {
-    private void SendEmail() {
-        Console.WriteLine("Sending email to customer...");
-    }
-
-    public void GenerateInvoice() {
-        Console.WriteLine("Generating invoice...");
-        SendEmail();
-    }
-
-    public void SendReminder() {
-        SendEmail();
-    }
+public int Add(int a, int b){
+    return a + b;
 }
 
 
