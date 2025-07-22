@@ -47,8 +47,14 @@ class ReportService {
 ### ✅ Good Code (Follow YAGNI):
 
 ```cpp
-public int Add(int a, int b){
-    return a + b;
+class ReportService {
+    public void GenerateReport(string type) {
+        if (type == "pdf") {
+            Console.WriteLine("Generating PDF Report...");
+        } else if (type == "excel") {
+            Console.WriteLine("Generating Excel Report...");
+        }
+    }
 }
 
 
