@@ -100,3 +100,9 @@ private Logger() { }
 - ✅ Caching service => একটিই memory/cache instance দরকার
 
 - ✅ Database connection => একাধিক connection performance খারাপ করে
+
+### ⚠️ গুরুত্বপূর্ণ সতর্কতা:
+
+- Multithreading environment এ এই singleton সঠিকভাবে কাজ না করতে পারে। সে জন্য Thread-safe Singleton লিখতে হয় (আগামি দিনে শিখব)।
+
+- Overuse করলে flexibility কমে যেতে পারে।
