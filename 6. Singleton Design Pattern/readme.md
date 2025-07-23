@@ -93,7 +93,8 @@ private Logger() { }
 
 ### 🧪 Singleton Pattern কখন ব্যবহার করবেন?
 
-- ✅ Avoid obj.getA().getB().doSomething()
+- ✅ Configuration class => সারা অ্যাপে একটাই সেটিংস দরকার
+
 - ✅ Keep methods focused
 - ✅ Use delegation
 - ✅ Hide internal structure (Encapsulation)
