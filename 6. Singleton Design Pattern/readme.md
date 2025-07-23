@@ -97,5 +97,6 @@ private Logger() { }
 
 - ✅Logger service => বারবার log লিখতে একই object দরকার
 
-- ✅ Use delegation
-- ✅ Hide internal structure (Encapsulation)
+- ✅ Caching service => একটিই memory/cache instance দরকার
+
+- ✅ Database connection => একাধিক connection performance খারাপ করে
