@@ -82,7 +82,12 @@ True
 
 ```
 
-এটা bad practice। কারণ car অনেক 'stranger'-এর সাথে কথা বলছে। এতে কোড become tightly coupled and hard to maintain.
+### 🔒 কেন Constructor private?
+
+```cs
+private Logger() { }
+
+```
 
 ### ❌ Bad Example:
 
