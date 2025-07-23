@@ -24,9 +24,7 @@ class Program
     public static void Main(string[] args)
     {
 
-        
-        Database db = Database.getInstance();
-            db.query("SELECT * FROM users");
+     
 
     }
 }
