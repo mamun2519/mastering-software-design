@@ -89,6 +89,8 @@ private Logger() { }
 
 ```
 
+➡️ কারণ আপনি যদি new Logger() করতে পারেন, তাহলে তো আপনি একাধিক instance তৈরি করতে পারবেন — যা singleton pattern ভেঙে দেবে।
+
 ### ❌ Bad Example:
 
 ```cpp
