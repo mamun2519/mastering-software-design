@@ -72,6 +72,16 @@ class Program
 
 ```
 
+### 🎯 Output:
+
+```cs
+Log: Starting application...
+Log: Logging from another part
+True
+
+
+```
+
 এটা bad practice। কারণ car অনেক 'stranger'-এর সাথে কথা বলছে। এতে কোড become tightly coupled and hard to maintain.
 
 ### ❌ Bad Example:
