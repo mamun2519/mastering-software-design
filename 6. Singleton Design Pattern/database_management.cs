@@ -12,10 +12,7 @@ public class Database {
                 return instance;
         }
 
-        public void query(string sql){
-                Console.WriteLine("Query: " + sql);
-        }
-}
+        
 
 class Program
 {
