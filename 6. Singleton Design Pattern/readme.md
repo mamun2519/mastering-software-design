@@ -95,6 +95,7 @@ private Logger() { }
 
 - ✅ Configuration class => সারা অ্যাপে একটাই সেটিংস দরকার
 
-- ✅ Keep methods focused
+- ✅Logger service => বারবার log লিখতে একই object দরকার
+
 - ✅ Use delegation
 - ✅ Hide internal structure (Encapsulation)
