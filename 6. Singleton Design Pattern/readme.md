@@ -16,7 +16,7 @@
 
 ### 🧱 Singleton Pattern-এর মূল ধারণা
 
--
+- private static instance => একই instance ধরে রাখে
 
 ```cs
 car.getEngine().getFuelInjector().inject()
