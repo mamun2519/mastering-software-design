@@ -20,8 +20,34 @@
 - private constructor => বাইরে থেকে new করে বানাতে না পারে
 - public static method => instance access করার জন্য method
 
+### 📌 উদাহরণ – ধাপে ধাপে
+
+ধরুন, আমাদের একটা Logger class আছে যেটা আমরা অনেক জায়গায় ব্যবহার করব।
+
 ```cs
-car.getEngine().getFuelInjector().inject()
+class Logger
+{
+    // Step 1: একটি static instance রাখি
+    private static Logger _instance;
+
+    // Step 2: Constructor কে private করে দিই
+    private Logger() { }
+
+    // Step 3: একটি static method যেটা instance ফেরত দিবে
+    public static Logger GetInstance()
+    {
+        if (_instance == null)
+        {
+            _instance = new Logger(); // শুধুমাত্র একবার বানাবে
+        }
+        return _instance;
+    }
+
+    public void Log(string message)
+    {
+        Console.WriteLine("Log: " + message);
+    }
+}
 
 
 ```
