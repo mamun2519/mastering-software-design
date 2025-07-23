@@ -18,6 +18,7 @@
 
 - private static instance => একই instance ধরে রাখে
 - private constructor => বাইরে থেকে new করে বানাতে না পারে
+- public static method => instance access করার জন্য method
 
 ```cs
 car.getEngine().getFuelInjector().inject()
