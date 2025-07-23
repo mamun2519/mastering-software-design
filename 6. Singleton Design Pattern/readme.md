@@ -52,6 +52,26 @@ class Logger
 
 ```
 
+### ✅ Main Method:
+
+```cs
+class Program
+{
+    static void Main(string[] args)
+    {
+        Logger logger1 = Logger.GetInstance();
+        Logger logger2 = Logger.GetInstance();
+
+        logger1.Log("Starting application...");
+        logger2.Log("Logging from another part");
+
+        Console.WriteLine(logger1 == logger2); // True — কারণ একই instance
+    }
+}
+
+
+```
+
 এটা bad practice। কারণ car অনেক 'stranger'-এর সাথে কথা বলছে। এতে কোড become tightly coupled and hard to maintain.
 
 ### ❌ Bad Example:
