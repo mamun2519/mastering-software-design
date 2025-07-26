@@ -24,7 +24,21 @@ class Triangle : IShap {
         }
 }
 
-
+class ShapeFactory {
+        public IShap GetShape(string shapeType){
+                if(shapeType == null){
+                        return null;
+                }
+                if(shapeType.Equals("CIRCLE")){
+                        return new Circle();
+                } else if(shapeType.Equals("RECTANGLE")){
+                        return new Rectangle();
+                } else if(shapeType.Equals("TRIANGLE")){
+                        return new Triangle();
+                }
+                return null;
+        }
+}
 class Program
 {
 
