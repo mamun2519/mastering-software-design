@@ -1,17 +1,7 @@
 using System;
 
 
-class WindowsButton : IButton{
-        public void Print(){
-                Console.WriteLine("Rendering Windows Button");
-        }
-}
 
-class MacButton : IButton {
-        public void Print(){
-                Console.WriteLine("Rendering Mac Button");
-        }
-}
 
 class WindowsCheckbox : ICheckbox {
         public void Print(){
