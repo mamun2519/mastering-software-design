@@ -16,9 +16,9 @@ Abstract Factory Design Pattern একটি Factory-এর Factory। এটি
 
 ধরো তুমি একটি অ্যাপ বানাচ্ছো যা দুটি OS-এ কাজ করবে: Windows এবং Mac। প্রত্যেক OS এর নিজস্ব Button এবং Checkbox থাকে। তুমি চাও এমন একটা সিস্টেম যা runtime-এ ঠিক করবে কোন OS এর UI component তৈরি হবে।
 
-### Example:
+## 🧩 Step-by-step Implementation (C#):
 
-### Step 1: Interface (Common Product)
+### 1. Product Interfaces
 
 ```cs
 public interface IVehicle
