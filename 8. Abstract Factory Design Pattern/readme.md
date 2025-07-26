@@ -120,6 +120,29 @@ class Application {
 
 ```
 
+### 6. Main Method
+
+```cs
+class Program {
+    static void Main(string[] args) {
+        IGUIFactory factory;
+
+        string os = "Windows"; // or "Mac"
+
+        if (os == "Windows") {
+            factory = new WindowsFactory();
+        } else {
+            factory = new MacFactory();
+        }
+
+        Application app = new Application(factory);
+        app.Render();
+    }
+}
+
+
+```
+
 ### 🧠 Benefits:
 
 - ✅ Loose Coupling
