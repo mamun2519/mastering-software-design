@@ -31,13 +31,79 @@ Main Goal: Complex object বানানো step-by-step ভাবে, যে�
 ## C# Code Example: Computer Builder
 
 ```cs
-interface IButton {
-    void Paint();
+using System;
+
+// Product class
+class Computer {
+    public string CPU { get; set; }
+    public string RAM { get; set; }
+    public string HDD { get; set; }
+
+    public void ShowSpecs() {
+        Console.WriteLine($"CPU: {CPU}, RAM: {RAM}, HDD: {HDD}");
+    }
 }
 
-interface ICheckbox {
-    void Paint();
+// Builder interface
+interface IComputerBuilder {
+    void BuildCPU();
+    void BuildRAM();
+    void BuildHDD();
+    Computer GetComputer();
 }
+
+// ConcreteBuilder
+class GamingComputerBuilder : IComputerBuilder {
+    private Computer _computer = new Computer();
+
+    public void BuildCPU() {
+        _computer.CPU = "Intel i9";
+    }
+
+    public void BuildRAM() {
+        _computer.RAM = "32GB";
+    }
+
+    public void BuildHDD() {
+        _computer.HDD = "1TB SSD";
+    }
+
+    public Computer GetComputer() {
+        return _computer;
+    }
+}
+
+// Director (optional)
+class ComputerDirector {
+    private IComputerBuilder _builder;
+
+    public ComputerDirector(IComputerBuilder builder) {
+        _builder = builder;
+    }
+
+    public void BuildComputer() {
+        _builder.BuildCPU();
+        _builder.BuildRAM();
+        _builder.BuildHDD();
+    }
+
+    public Computer GetComputer() {
+        return _builder.GetComputer();
+    }
+}
+
+// Client
+class Program {
+    static void Main(string[] args) {
+        IComputerBuilder builder = new GamingComputerBuilder();
+        ComputerDirector director = new ComputerDirector(builder);
+
+        director.BuildComputer();
+        Computer computer = director.GetComputer();
+        computer.ShowSpecs();
+    }
+}
+
 
 ```
 
