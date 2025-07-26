@@ -28,9 +28,7 @@ Main Goal: Complex object বানানো step-by-step ভাবে, যে�
 
 একটি Computer build করার কথা ভাবো যেখানে CPU, RAM, HDD আলাদা আলাদা ভাবে যুক্ত করা যায়। কেউ কম RAM চায়, কেউ বেশি। কেউ SSD চায়, কেউ চায় না। এটার জন্য builder pattern perfect.
 
-## 🧩 Step-by-step Implementation (C#):
-
-### 1. Product Interfaces
+## C# Code Example: Computer Builder
 
 ```cs
 interface IButton {
