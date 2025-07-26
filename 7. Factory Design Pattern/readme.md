@@ -83,6 +83,24 @@ public class VehicleFactory
 
 ```
 
+Step 4: Client Code
+
+```cs
+class Program
+{
+    static void Main(string[] args)
+    {
+        IVehicle vehicle1 = VehicleFactory.GetVehicle("car");
+        vehicle1.Drive();
+
+        IVehicle vehicle2 = VehicleFactory.GetVehicle("bike");
+        vehicle2.Drive();
+    }
+}
+
+
+```
+
 ### ✅ Main Method:
 
 ```cs
