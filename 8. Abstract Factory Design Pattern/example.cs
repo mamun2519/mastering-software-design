@@ -1,12 +1,5 @@
 using System;
 
-interface IButton {
-        void Print();
-}
-
-interface ICheckbox {
-        void Print();
-}
 
 class WindowsButton : IButton{
         public void Print(){
