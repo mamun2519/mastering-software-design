@@ -34,21 +34,30 @@ interface ICheckbox {
 ### step 2: Concrete Products
 
 ```cs
-public class Car : IVehicle
-{
-    public void Drive()
-    {
-        Console.WriteLine("Driving a Car");
+class WindowsButton : IButton {
+    public void Paint() {
+        Console.WriteLine("Render a button in Windows style.");
     }
 }
 
-public class Bike : IVehicle
-{
-    public void Drive()
-    {
-        Console.WriteLine("Riding a Bike");
+class MacButton : IButton {
+    public void Paint() {
+        Console.WriteLine("Render a button in Mac style.");
     }
 }
+
+class WindowsCheckbox : ICheckbox {
+    public void Paint() {
+        Console.WriteLine("Render a checkbox in Windows style.");
+    }
+}
+
+class MacCheckbox : ICheckbox {
+    public void Paint() {
+        Console.WriteLine("Render a checkbox in Mac style.");
+    }
+}
+
 
 
 ```
