@@ -45,27 +45,19 @@ public interface IVehicle
 step 2: Concrete Products
 
 ```cs
-class Logger
+public class Car : IVehicle
 {
-    // Step 1: একটি static instance রাখি
-    private static Logger _instance;
-
-    // Step 2: Constructor কে private করে দিই
-    private Logger() { }
-
-    // Step 3: একটি static method যেটা instance ফেরত দিবে
-    public static Logger GetInstance()
+    public void Drive()
     {
-        if (_instance == null)
-        {
-            _instance = new Logger(); // শুধুমাত্র একবার বানাবে
-        }
-        return _instance;
+        Console.WriteLine("Driving a Car");
     }
+}
 
-    public void Log(string message)
+public class Bike : IVehicle
+{
+    public void Drive()
     {
-        Console.WriteLine("Log: " + message);
+        Console.WriteLine("Riding a Bike");
     }
 }
 
