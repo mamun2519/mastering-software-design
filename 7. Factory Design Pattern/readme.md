@@ -20,7 +20,13 @@ Factory pattern ব্যবহার করলে, আপনি Factory কে 
 
 ```
 
-👉 Singleton হল এমন একটা Design Pattern, যা নিশ্চিত করে যে একটি class-এর শুধু একটি instance থাকবে এবং তা globally accessible হবে।
+✅ Use Cases:
+
+- Object creation complicated হলে
+
+- Subclasses কোনটা instantiate হবে সেটা runtime এ ঠিক হলে
+
+- Object creation logic centralize করতে চাইলে
 
 ### 🧱 Singleton Pattern-এর মূল ধারণা
 
