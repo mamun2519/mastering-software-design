@@ -30,7 +30,7 @@ Factory pattern ব্যবহার করলে, আপনি Factory কে 
 
 ### Example:
 
-Step 1: Interface (Common Product)
+### Step 1: Interface (Common Product)
 
 ```cs
 public interface IVehicle
@@ -42,7 +42,7 @@ public interface IVehicle
 
 ```
 
-step 2: Concrete Products
+### step 2: Concrete Products
 
 ```cs
 public class Car : IVehicle
@@ -64,7 +64,7 @@ public class Bike : IVehicle
 
 ```
 
-Step 3: Factory
+### Step 3: Factory
 
 ```cs
 public class VehicleFactory
@@ -83,7 +83,7 @@ public class VehicleFactory
 
 ```
 
-Step 4: Client Code
+### Step 4: Client Code
 
 ```cs
 class Program
