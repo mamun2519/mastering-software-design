@@ -1,8 +1,6 @@
 using System;
 
-interface IShap {
-        void Draw();
-}
+
 
 class Circle : IShap{
         public void Draw(){
