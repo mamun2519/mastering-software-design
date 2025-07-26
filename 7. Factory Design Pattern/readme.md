@@ -101,7 +101,11 @@ class Program
 
 ```
 
-### ✅ Main Method:
+### 🧠 Benefits:
+
+- ✅ Loose Coupling
+- ✅ Object creation encapsulated
+- ✅ Clean and maintainable code
 
 ```cs
 class Program
