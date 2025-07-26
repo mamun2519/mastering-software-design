@@ -107,21 +107,12 @@ class Program
 - ✅ Object creation encapsulated
 - ✅ Clean and maintainable code
 
+### 🚫 Without Factory:
+
 ```cs
-class Program
-{
-    static void Main(string[] args)
-    {
-        Logger logger1 = Logger.GetInstance();
-        Logger logger2 = Logger.GetInstance();
-
-        logger1.Log("Starting application...");
-        logger2.Log("Logging from another part");
-
-        Console.WriteLine(logger1 == logger2); // True — কারণ একই instance
-    }
-}
-
+ Car car = new Car();
+Bike bike = new Bike();
+// এখানে tightly coupled হয়ে গেছে
 
 ```
 
