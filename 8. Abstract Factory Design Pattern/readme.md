@@ -73,18 +73,26 @@ interface IGUIFactory {
 
 ```
 
-### Step 4: Client Code
+### Step 4: Concrete Factories
 
 ```cs
-class Program
-{
-    static void Main(string[] args)
-    {
-        IVehicle vehicle1 = VehicleFactory.GetVehicle("car");
-        vehicle1.Drive();
+class WindowsFactory : IGUIFactory {
+    public IButton CreateButton() {
+        return new WindowsButton();
+    }
 
-        IVehicle vehicle2 = VehicleFactory.GetVehicle("bike");
-        vehicle2.Drive();
+    public ICheckbox CreateCheckbox() {
+        return new WindowsCheckbox();
+    }
+}
+
+class MacFactory : IGUIFactory {
+    public IButton CreateButton() {
+        return new MacButton();
+    }
+
+    public ICheckbox CreateCheckbox() {
+        return new MacCheckbox();
     }
 }
 
