@@ -21,12 +21,13 @@ Abstract Factory Design Pattern একটি Factory-এর Factory। এটি
 ### 1. Product Interfaces
 
 ```cs
-public interface IVehicle
-{
-    void Drive();
+interface IButton {
+    void Paint();
 }
 
-
+interface ICheckbox {
+    void Paint();
+}
 
 ```
 
