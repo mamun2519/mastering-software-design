@@ -14,15 +14,15 @@ Main Goal: Complex object বানানো step-by-step ভাবে, যে�
 
 ### 🧰 Key Concepts:
 
-Product → যেটা তৈরি হবে (e.g., Computer, House)
+- Product → যেটা তৈরি হবে (e.g., Computer, House)
 
-Builder Interface → object বানানোর step define করে
+- Builder Interface → object বানানোর step define করে
 
-ConcreteBuilder → steps implement করে
+- ConcreteBuilder → steps implement করে
 
-Director (optional) → steps এর order নিয়ন্ত্রণ করে
+- Director (optional) → steps এর order নিয়ন্ত্রণ করে
 
-Client → builder কে call করে
+- Client → builder কে call করে
 
 ### 🏗 উদাহরণ দিয়ে বোঝাই
 
