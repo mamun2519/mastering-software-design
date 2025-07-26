@@ -143,11 +143,9 @@ class Program {
 
 ```
 
-### 🧠 Benefits:
+### 📘 Real-life Example:
 
-- ✅ Loose Coupling
-- ✅ Object creation encapsulated
-- ✅ Clean and maintainable code
+ধরো তুমি e-commerce app বানাচ্ছো। ইউজার যদি বাংলাদেশের হয়, তাহলে BkashPayment, NagadNotification use করবে। ইউজার যদি USA থেকে হয়, তাহলে StripePayment, EmailNotification use করবে। এইভাবে দেশ অনুযায়ী factory switch করতে হয়।
 
 ### 🚫 Without Factory:
 
