@@ -62,7 +62,7 @@ class MacCheckbox : ICheckbox {
 
 ```
 
-### Step 3: Factory
+### Step 3: Abstract Factory
 
 ```cs
 public class VehicleFactory
