@@ -99,6 +99,27 @@ class MacFactory : IGUIFactory {
 
 ```
 
+### 5. Client Code
+
+```cs
+class Application {
+    private IButton button;
+    private ICheckbox checkbox;
+
+    public Application(IGUIFactory factory) {
+        button = factory.CreateButton();
+        checkbox = factory.CreateCheckbox();
+    }
+
+    public void Render() {
+        button.Paint();
+        checkbox.Paint();
+    }
+}
+
+
+```
+
 ### 🧠 Benefits:
 
 - ✅ Loose Coupling
