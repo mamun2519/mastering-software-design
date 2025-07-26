@@ -3,17 +3,6 @@ using System;
 
 
 
-class WindowsCheckbox : ICheckbox {
-        public void Print(){
-                Console.WriteLine("Rendering Windows Checkbox");
-        }
-}
-
-class MacCheckbox : ICheckbox{
-        public void Print(){
-                Console.WriteLine("Rendering Mac Checkbox");
-        }
-}
 
 interface IGUIFactory {
         IButton CreateButton();
