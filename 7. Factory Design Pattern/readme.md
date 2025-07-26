@@ -28,11 +28,19 @@ Factory pattern ব্যবহার করলে, আপনি Factory কে 
 
 - Object creation logic centralize করতে চাইলে
 
-### 🧱 Singleton Pattern-এর মূল ধারণা
+### Example:
 
-- private static instance => একই instance ধরে রাখে
-- private constructor => বাইরে থেকে new করে বানাতে না পারে
-- public static method => instance access করার জন্য method
+Step 1: Interface (Common Product)
+
+```cs
+public interface IVehicle
+{
+    void Drive();
+}
+
+
+
+```
 
 ### 📌 উদাহরণ – ধাপে ধাপে
 
