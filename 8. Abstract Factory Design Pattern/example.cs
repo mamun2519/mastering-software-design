@@ -5,15 +5,6 @@ using System;
 
 
 
-class MacFactory : IGUIFactory {
-        public IButton CreateButton(){
-                return new MacButton();
-        }
-        public ICheckbox CreateCheckbox(){
-                return new MacCheckbox();
-        }
-}
-
 class Application {
         private IButton button;
         private ICheckbox checkbox;
