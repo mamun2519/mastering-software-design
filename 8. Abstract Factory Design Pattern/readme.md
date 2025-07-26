@@ -65,17 +65,9 @@ class MacCheckbox : ICheckbox {
 ### Step 3: Abstract Factory
 
 ```cs
-public class VehicleFactory
-{
-    public static IVehicle GetVehicle(string type)
-    {
-        if (type.ToLower() == "car")
-            return new Car();
-        else if (type.ToLower() == "bike")
-            return new Bike();
-        else
-            throw new Exception("Vehicle type not supported");
-    }
+interface IGUIFactory {
+    IButton CreateButton();
+    ICheckbox CreateCheckbox();
 }
 
 
