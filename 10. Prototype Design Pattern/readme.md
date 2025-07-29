@@ -23,7 +23,7 @@ Key Idea:
 
 একটি Computer build করার কথা ভাবো যেখানে CPU, RAM, HDD আলাদা আলাদা ভাবে যুক্ত করা যায়। কেউ কম RAM চায়, কেউ বেশি। কেউ SSD চায়, কেউ চায় না। এটার জন্য builder pattern perfect.
 
-## C# Code Example: Computer Builder
+## C# Code Example
 
 ```cs
 using System;
