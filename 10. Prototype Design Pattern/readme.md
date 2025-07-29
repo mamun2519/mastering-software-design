@@ -117,3 +117,17 @@ emp2 হলো emp1 এর clone। কিন্তু তুমি চাইল
 - Deep Copy: nested object গুলোও নতুনভাবে copy হয়।
 
 ### Deep Copy Example (Serialization ব্যবহার করে)
+
+```cs
+public IPrototype DeepClone()
+{
+    using (var ms = new MemoryStream())
+    {
+        BinaryFormatter formatter = new BinaryFormatter();
+        formatter.Serialize(ms, this);
+        ms.Position = 0;
+        return (IPrototype)formatter.Deserialize(ms);
+    }
+}
+
+```
