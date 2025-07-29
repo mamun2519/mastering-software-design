@@ -136,6 +136,6 @@ public IPrototype DeepClone()
 
 - Object creation fast হয়।
 
-Existing object এর উপর ভিত্তি করে নতুন object বানানো যায়।
+- Existing object এর উপর ভিত্তি করে নতুন object বানানো যায়।
 
 Complex initialization বারবার করার দরকার হয় না।
