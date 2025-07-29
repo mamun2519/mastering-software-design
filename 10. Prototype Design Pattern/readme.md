@@ -35,6 +35,8 @@ public interface IPrototype
 
 ```
 
+### Step 2: Concrete Class
+
 ### 🧠 Benefits:
 
 - ✅ Complex object বানানো সহজ হয়
