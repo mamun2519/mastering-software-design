@@ -1,4 +1,4 @@
-# Builder Design Pattern 🚧
+# Prototype Design Pattern
 
 ### 🔷 Problem Statement:
 
