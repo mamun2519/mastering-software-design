@@ -64,6 +64,28 @@ public class Employee : IPrototype
 
 ```
 
+### Step 3: Client Code
+
+```cs
+class Program
+{
+    static void Main(string[] args)
+    {
+        Employee emp1 = new Employee("Juboraj", "IT");
+        emp1.ShowDetails();
+
+        // Clone emp1 into emp2
+        Employee emp2 = (Employee)emp1.Clone();
+        emp2.Name = "Mamun";
+
+        emp1.ShowDetails();
+        emp2.ShowDetails();
+    }
+}
+
+
+```
+
 ### 🧠 Benefits:
 
 - ✅ Complex object বানানো সহজ হয়
