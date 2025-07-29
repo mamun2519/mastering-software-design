@@ -28,8 +28,11 @@ Key Idea:
 ### Step 1: Prototype Interface তৈরি করা
 
 ```cs
+public interface IPrototype
+{
+    IPrototype Clone();
+}
 
-// Con
 ```
 
 ### 🧠 Benefits:
