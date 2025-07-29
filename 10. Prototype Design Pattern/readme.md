@@ -7,11 +7,13 @@ Prototype Design Pattern হলো একটি Creational Pattern যা কো
 Key Idea:
 একবার object তৈরি কর, তারপর যখন দরকার, সেই object-এর copy (clone) তৈরি করো।
 
-### 🧱 What is Builder Design Pattern?
+### 🔍 কখন ব্যবহার করা হয়?
 
-Builder Design Pattern এমন একটি creational design pattern যা complex object creation কে simplify করে।
+যখন object তৈরি করা ব্যয়বহুল বা সময়সাপেক্ষ হয়।
 
-Main Goal: Complex object বানানো step-by-step ভাবে, যেখানে object তৈরির process এবং representation আলাদা করা হয়।
+যখন কোনো object-এর অনেক configuration থাকে।
+
+যখন নতুন object তৈরির বদলে existing object কে duplicate করা বেশি উপযোগী।
 
 ### ।
 
