@@ -138,4 +138,4 @@ public IPrototype DeepClone()
 
 - Existing object এর উপর ভিত্তি করে নতুন object বানানো যায়।
 
-Complex initialization বারবার করার দরকার হয় না।
+- Complex initialization বারবার করার দরকার হয় না।
