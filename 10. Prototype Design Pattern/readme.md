@@ -112,6 +112,6 @@ emp2 হলো emp1 এর clone। কিন্তু তুমি চাইল
 
 ### 🧠 Deep Copy vs Shallow Copy
 
-Shallow Copy: শুধু reference copy হয়। Nested object আলাদা হয় না।
+- Shallow Copy: শুধু reference copy হয়। Nested object আলাদা হয় না।
 
-Deep Copy: nested object গুলোও নতুনভাবে copy হয়।
+- Deep Copy: nested object গুলোও নতুনভাবে copy হয়।
