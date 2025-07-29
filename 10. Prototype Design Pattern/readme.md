@@ -37,6 +37,33 @@ public interface IPrototype
 
 ### Step 2: Concrete Class
 
+```cs
+public class Employee : IPrototype
+{
+    public string Name { get; set; }
+    public string Department { get; set; }
+
+    public Employee(string name, string department)
+    {
+        Name = name;
+        Department = department;
+    }
+
+    public IPrototype Clone()
+    {
+        // Shallow copy
+        return (IPrototype)this.MemberwiseClone();
+    }
+
+    public void ShowDetails()
+    {
+        Console.WriteLine($"Name: {Name}, Department: {Department}");
+    }
+}
+
+
+```
+
 ### 🧠 Benefits:
 
 - ✅ Complex object বানানো সহজ হয়
