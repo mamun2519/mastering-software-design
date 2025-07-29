@@ -110,8 +110,8 @@ class Program
 
 emp2 হলো emp1 এর clone। কিন্তু তুমি চাইলে property গুলো change করতে পারবে।
 
-### 🧠 Benefits:
+### 🧠 Deep Copy vs Shallow Copy
 
-- ✅ Complex object বানানো সহজ হয়
-- ✅ Readable and Maintainable code
-- ✅ Same process, different representation possible
+Shallow Copy: শুধু reference copy হয়। Nested object আলাদা হয় না।
+
+Deep Copy: nested object গুলোও নতুনভাবে copy হয়।
