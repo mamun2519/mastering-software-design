@@ -20,26 +20,6 @@ using System.Collections.Generic;
 // services interfaces
 
 
-// services
-public class StudentService : IStudentService {
-        IStudentRepository studentRepository;
-        public StudentService (IStudentRepository studentRepository){
-                this.studentRepository = studentRepository;
-        }
-
-        public void AddStudent(Student student){
-                studentRepository.AddStudent(student);
-        }
-        public void RemoveStudent(Student student){
-                studentRepository.RemoveStudent(student);
-        }
-        public void UpdateStudent(Student student){
-                studentRepository.UpdateStudent(student);
-        }
-        public IList<Student> GetAllStudents(){
-                return studentRepository.GetAllStudents();
-        }
-}
 
 public class TrainerService : ITrainerService {
         ITrainerRepository trainerRepository;
