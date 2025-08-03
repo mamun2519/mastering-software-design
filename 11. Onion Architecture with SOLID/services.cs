@@ -7,12 +7,7 @@ using System.Collections.Generic;
 
 
 // interfaces
-public interface IStudentRepository {
-        void AddStudent(Student student);
-        void RemoveStudent(Student student);
-        void UpdateStudent(Student student);
-        IList<Student> GetAllStudents();
-}
+
 
 public interface ITrainerRepository {
         void AddTrainer(Trainer trainer);
