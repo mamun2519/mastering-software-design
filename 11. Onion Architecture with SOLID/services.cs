@@ -33,11 +33,7 @@ class Program
            
 // Add a student
          
-            // get all students
-            IList<Student> students = studentController.GetAllStudents();
-            foreach (Student s in students){
-                    Console.WriteLine(s.Name);
-            }
+           
            
           
 
