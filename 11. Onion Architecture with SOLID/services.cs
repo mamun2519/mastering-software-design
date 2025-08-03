@@ -19,12 +19,6 @@ using System.Collections.Generic;
 
 // services interfaces
 
-public interface ICourseService {
-        void AddCourse(Course course);
-        void RemoveCourse(Course course);
-        void UpdateCourse(Course course);
-        IList<Course> GetAllCourses();
-}
 
 // services
 public class StudentService : IStudentService {
