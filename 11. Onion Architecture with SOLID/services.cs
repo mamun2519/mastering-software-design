@@ -30,9 +30,7 @@ class Program
 // Create instances of services
    
 // Create instances of controllers
-            StudentController studentController = new StudentController(studentService);
-            TrainerController trainerController = new TrainerController(trainerService);
-            CourseController courseController = new CourseController(courseService);
+           
 // Add a student
             Student student = new Student { StudentId = 1, Name = "John Doe", Email = "john.doe@example.com" };
             studentController.AddStudent(student);
