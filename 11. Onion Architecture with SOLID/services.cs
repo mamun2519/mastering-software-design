@@ -3,11 +3,6 @@ using System.Collections.Generic;
 
 
 
-public class Trainer {
-        public int TrainerId { get; set; }
-        public string Name { get; set; }
-        public string Email { get; set; }
-}
 
 public class Course {
         public int CourseId { get; set; }
