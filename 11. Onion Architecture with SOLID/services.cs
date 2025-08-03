@@ -16,8 +16,39 @@ using System.Collections.Generic;
 
 
 
+public class CourseRepository : ICourseRepository {
+        Database db;
+        public CourseRepository(Database db){
+                this.db = db;
+        }
+        public void AddCourse(Course course){
+                db.Courses.Add(course);
+        }
+        public void RemoveCourse(Course course){
+                db.Courses.Remove(course);
+        }
+        public void UpdateCourse(Course course){
+                db.Courses[db.Courses.IndexOf(course)] = course;
+        }
+        public IList< Course> GetAllCourses(){
+                return db.Courses;
+        }
+}
+
 
 // services interfaces
+public interface IStudentService {
+        void AddStudent(Student student);
+        void RemoveStudent(Student student);
+        void UpdateStudent(Student student);
+        IList<Student> GetAllStudents();
+}
+public interface ITrainerService {
+        void AddTrainer(Trainer trainer);
+        void RemoveTrainer(Trainer trainer);
+        void UpdateTrainer(Trainer trainer);
+        IList<Trainer> GetAllTrainers();
+}
 
 public interface ICourseService {
         void AddCourse(Course course);
