@@ -3,14 +3,27 @@ using System.Collections.Generic;
 
 
 
+public class Trainer {
+        public int TrainerId { get; set; }
+        public string Name { get; set; }
+        public string Email { get; set; }
+}
 
-
+public class Course {
+        public int CourseId { get; set; }
+        public string Name { get; set; }
+        public string Description { get; set; }
+}
 // database
 public class Database {
         public IList <Student> Students ;
         public IList <Trainer> Trainers ;
         public IList <Course> Courses ;
-        
+        public Database (){
+                Students = new List<Student>();
+                Trainers = new List<Trainer>();
+                Courses = new List<Course>();
+        }
 }
 // interfaces
 public interface IStudentRepository {
