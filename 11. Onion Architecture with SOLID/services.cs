@@ -21,24 +21,6 @@ using System.Collections.Generic;
 
 
 
-public class CourseService : ICourseService {
-        ICourseRepository courseRepository;
-        public CourseService (ICourseRepository courseRepository){
-                this.courseRepository = courseRepository;
-        }
-        public void AddCourse(Course course){
-                courseRepository.AddCourse(course);
-        }
-        public void RemoveCourse(Course course){
-                courseRepository.RemoveCourse(course);
-        }
-        public void UpdateCourse(Course course){
-                courseRepository.UpdateCourse(course);
-        }
-        public IList<Course> GetAllCourses(){
-                return courseRepository.GetAllCourses();
-        }
-}
 
 // controllers
 public class StudentController {
