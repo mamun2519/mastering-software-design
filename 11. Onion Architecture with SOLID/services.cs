@@ -10,11 +10,7 @@ public class Database {
         public IList <Student> Students ;
         public IList <Trainer> Trainers ;
         public IList <Course> Courses ;
-        public Database (){
-                Students = new List<Student>();
-                Trainers = new List<Trainer>();
-                Courses = new List<Course>();
-        }
+        
 }
 // interfaces
 public interface IStudentRepository {
