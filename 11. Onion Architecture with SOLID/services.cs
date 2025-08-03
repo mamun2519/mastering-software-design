@@ -15,10 +15,7 @@ using System.Collections.Generic;
 // repositories
 public class StudentRepository : IStudentRepository {
       
-    
-        public void RemoveStudent(Student student){
-                db.Students.Remove(student);
-        }
+   
         public void UpdateStudent(Student student){
                 db.Students[db.Students.IndexOf(student)] = student;
         }
