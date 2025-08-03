@@ -15,9 +15,7 @@ using System.Collections.Generic;
 // repositories
 public class StudentRepository : IStudentRepository {
       
-        public void AddStudent(Student student){
-                db.Students.Add(student);
-        }
+    
         public void RemoveStudent(Student student){
                 db.Students.Remove(student);
         }
