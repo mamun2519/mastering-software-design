@@ -21,25 +21,6 @@ using System.Collections.Generic;
 
 
 
-public class TrainerService : ITrainerService {
-        ITrainerRepository trainerRepository;
-        public TrainerService (ITrainerRepository trainerRepository){
-                this.trainerRepository = trainerRepository;
-        }
-        public void AddTrainer(Trainer trainer){
-                trainerRepository.AddTrainer(trainer);
-        }
-        public void RemoveTrainer(Trainer trainer){
-                trainerRepository.RemoveTrainer(trainer);
-        }
-        public void UpdateTrainer(Trainer trainer){
-                trainerRepository.UpdateTrainer(trainer);
-        }
-        public IList<Trainer> GetAllTrainers(){
-                return trainerRepository.GetAllTrainers();
-        }
-}
-
 public class CourseService : ICourseService {
         ICourseRepository courseRepository;
         public CourseService (ICourseRepository courseRepository){
