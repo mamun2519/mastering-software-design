@@ -17,9 +17,6 @@ public class StudentRepository : IStudentRepository {
       
    
     
-        public IList<Student> GetAllStudents(){
-                return db.Students;
-        }
 }
 
 public class TrainerRepository : ITrainerRepository {
