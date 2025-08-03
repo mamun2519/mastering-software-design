@@ -14,11 +14,7 @@ using System.Collections.Generic;
 
 // repositories
 public class StudentRepository : IStudentRepository {
-        Database db;
-        public StudentRepository(Database db){
-                this.db = db;
-        }
-
+      
         public void AddStudent(Student student){
                 db.Students.Add(student);
         }
