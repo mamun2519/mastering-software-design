@@ -28,7 +28,9 @@ class Program
        // Create instances of repositories and services
         
 // Create instances of services
-   
+            IStudentService studentService = new StudentService(studentRepository);
+            ITrainerService trainerService = new TrainerService(trainerRepository);
+            ICourseService courseService = new CourseService(courseRepository);
 // Create instances of controllers
             StudentController studentController = new StudentController(studentService);
             TrainerController trainerController = new TrainerController(trainerService);
