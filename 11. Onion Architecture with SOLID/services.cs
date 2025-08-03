@@ -24,24 +24,6 @@ using System.Collections.Generic;
 
 
 
-public class TrainerController {
-        ITrainerService trainerService;
-        public TrainerController (ITrainerService trainerService ){
-                    this.trainerService = trainerService;
-        }
-        public void AddTrainer(Trainer trainer){
-                trainerService.AddTrainer(trainer);
-        }
-        public void RemoveTrainer(Trainer trainer){
-                trainerService.RemoveTrainer(trainer);
-        }
-        public void UpdateTrainer(Trainer trainer){
-                trainerService.UpdateTrainer(trainer);
-        }
-        public IList<Trainer> GetAllTrainers(){
-                return trainerService.GetAllTrainers();
-        }
-}
 
 public class CourseController {
         ICourseService courseService;
