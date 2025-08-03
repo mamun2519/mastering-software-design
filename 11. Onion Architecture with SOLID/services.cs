@@ -5,11 +5,27 @@ using System.Collections.Generic;
 
 
 
-
+// database
+public class Database {
+        public IList <Student> Students ;
+        public IList <Trainer> Trainers ;
+        public IList <Course> Courses ;
+        
+}
 // interfaces
+public interface IStudentRepository {
+        void AddStudent(Student student);
+        void RemoveStudent(Student student);
+        void UpdateStudent(Student student);
+        IList<Student> GetAllStudents();
+}
 
-
-
+public interface ITrainerRepository {
+        void AddTrainer(Trainer trainer);
+        void RemoveTrainer(Trainer trainer);
+        void UpdateTrainer(Trainer trainer);
+        IList<Trainer> GetAllTrainers();
+}
 public interface ICourseRepository {
         void AddCourse(Course course);
         void RemoveCourse(Course course);
