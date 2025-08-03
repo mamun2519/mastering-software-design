@@ -10,13 +10,7 @@ using System.Collections.Generic;
 
 
 
-public interface ICourseRepository {
-        void AddCourse(Course course);
-        void RemoveCourse(Course course);
-        void UpdateCourse(Course course);
-        IList<Course> GetAllCourses();
 
-        }
 
 // repositories
 public class StudentRepository : IStudentRepository {
