@@ -19,13 +19,6 @@ using System.Collections.Generic;
 
 // services interfaces
 
-public interface ITrainerService {
-        void AddTrainer(Trainer trainer);
-        void RemoveTrainer(Trainer trainer);
-        void UpdateTrainer(Trainer trainer);
-        IList<Trainer> GetAllTrainers();
-}
-
 public interface ICourseService {
         void AddCourse(Course course);
         void RemoveCourse(Course course);
