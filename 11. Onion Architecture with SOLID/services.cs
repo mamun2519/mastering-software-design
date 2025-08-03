@@ -19,11 +19,110 @@ using System.Collections.Generic;
 
 // services interfaces
 
+public interface ICourseService {
+        void AddCourse(Course course);
+        void RemoveCourse(Course course);
+        void UpdateCourse(Course course);
+        IList<Course> GetAllCourses();
+}
 
+// services
+public class StudentService : IStudentService {
+        IStudentRepository studentRepository;
+        public StudentService (IStudentRepository studentRepository){
+                this.studentRepository = studentRepository;
+        }
 
+        public void AddStudent(Student student){
+                studentRepository.AddStudent(student);
+        }
+        public void RemoveStudent(Student student){
+                studentRepository.RemoveStudent(student);
+        }
+        public void UpdateStudent(Student student){
+                studentRepository.UpdateStudent(student);
+        }
+        public IList<Student> GetAllStudents(){
+                return studentRepository.GetAllStudents();
+        }
+}
 
+public class TrainerService : ITrainerService {
+        ITrainerRepository trainerRepository;
+        public TrainerService (ITrainerRepository trainerRepository){
+                this.trainerRepository = trainerRepository;
+        }
+        public void AddTrainer(Trainer trainer){
+                trainerRepository.AddTrainer(trainer);
+        }
+        public void RemoveTrainer(Trainer trainer){
+                trainerRepository.RemoveTrainer(trainer);
+        }
+        public void UpdateTrainer(Trainer trainer){
+                trainerRepository.UpdateTrainer(trainer);
+        }
+        public IList<Trainer> GetAllTrainers(){
+                return trainerRepository.GetAllTrainers();
+        }
+}
 
+public class CourseService : ICourseService {
+        ICourseRepository courseRepository;
+        public CourseService (ICourseRepository courseRepository){
+                this.courseRepository = courseRepository;
+        }
+        public void AddCourse(Course course){
+                courseRepository.AddCourse(course);
+        }
+        public void RemoveCourse(Course course){
+                courseRepository.RemoveCourse(course);
+        }
+        public void UpdateCourse(Course course){
+                courseRepository.UpdateCourse(course);
+        }
+        public IList<Course> GetAllCourses(){
+                return courseRepository.GetAllCourses();
+        }
+}
 
+// controllers
+public class StudentController {
+        IStudentService studentService;
+        public StudentController(IStudentService studentService ){
+                    this.studentService = studentService;
+        }
+        public void AddStudent(Student student){
+                studentService.AddStudent(student);
+        }
+        public void RemoveStudent(Student student){
+                studentService.RemoveStudent(student);
+        }
+        public void UpdateStudent(Student student){
+                studentService.UpdateStudent(student);
+        }
+        public IList<Student> GetAllStudents(){
+                return studentService.GetAllStudents();
+        }
+}
+
+public class TrainerController {
+        ITrainerService trainerService;
+        public TrainerController (ITrainerService trainerService ){
+                    this.trainerService = trainerService;
+        }
+        public void AddTrainer(Trainer trainer){
+                trainerService.AddTrainer(trainer);
+        }
+        public void RemoveTrainer(Trainer trainer){
+                trainerService.RemoveTrainer(trainer);
+        }
+        public void UpdateTrainer(Trainer trainer){
+                trainerService.UpdateTrainer(trainer);
+        }
+        public IList<Trainer> GetAllTrainers(){
+                return trainerService.GetAllTrainers();
+        }
+}
 
 public class CourseController {
         ICourseService courseService;
