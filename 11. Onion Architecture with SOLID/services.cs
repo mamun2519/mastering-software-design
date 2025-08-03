@@ -18,12 +18,7 @@ using System.Collections.Generic;
 
 
 // services interfaces
-public interface IStudentService {
-        void AddStudent(Student student);
-        void RemoveStudent(Student student);
-        void UpdateStudent(Student student);
-        IList<Student> GetAllStudents();
-}
+
 public interface ITrainerService {
         void AddTrainer(Trainer trainer);
         void RemoveTrainer(Trainer trainer);
