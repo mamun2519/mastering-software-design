@@ -32,10 +32,7 @@ class Program
 // Create instances of controllers
            
 // Add a student
-            Student student = new Student { StudentId = 1, Name = "John Doe", Email = "john.doe@example.com" };
-            studentController.AddStudent(student);
-            Console.WriteLine("Student added successfully!");
-
+         
             // get all students
             IList<Student> students = studentController.GetAllStudents();
             foreach (Student s in students){
