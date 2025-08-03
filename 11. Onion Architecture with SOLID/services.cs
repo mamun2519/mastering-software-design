@@ -9,12 +9,7 @@ using System.Collections.Generic;
 // interfaces
 
 
-public interface ITrainerRepository {
-        void AddTrainer(Trainer trainer);
-        void RemoveTrainer(Trainer trainer);
-        void UpdateTrainer(Trainer trainer);
-        IList<Trainer> GetAllTrainers();
-}
+
 public interface ICourseRepository {
         void AddCourse(Course course);
         void RemoveCourse(Course course);
