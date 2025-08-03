@@ -18,6 +18,33 @@ using System.Collections.Generic;
 
 
 // services interfaces
+
+
+
+
+
+
+
+public class CourseController {
+        ICourseService courseService;
+
+        public CourseController (ICourseService courseService ){
+                    this.courseService = courseService;
+        }
+        public void AddCourse(Course course){
+                courseService.AddCourse(course);
+        }
+        public void RemoveCourse(Course course){
+                courseService.RemoveCourse(course);
+        }
+        public void UpdateCourse(Course course){
+                courseService.UpdateCourse(course);
+        }
+        public IList<Course> GetAllCourses(){
+                return courseService.GetAllCourses();
+        }
+}
+
 class Program
 {
 
