@@ -12,12 +12,7 @@ using System.Collections.Generic;
 
 
 
-// repositories
-public class StudentRepository : IStudentRepository {
-      
-   
-    
-}
+
 
 public class TrainerRepository : ITrainerRepository {
         Database db;
