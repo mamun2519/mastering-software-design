@@ -12,9 +12,31 @@ using System.Collections.Generic;
 
 
 
+// repositories
+public class StudentRepository : IStudentRepository {
+      
+   
+    
+}
 
-
-
+public class TrainerRepository : ITrainerRepository {
+        Database db;
+        public TrainerRepository(Database db){
+                this.db = db;
+        }
+        public void AddTrainer(Trainer trainer){
+                db.Trainers.Add(trainer);
+        }
+        public void RemoveTrainer(Trainer trainer){
+                db.Trainers.Remove(trainer);
+        }
+        public void UpdateTrainer(Trainer trainer){
+                db.Trainers[db.Trainers.IndexOf(trainer)] = trainer;
+        }
+        public IList<Trainer> GetAllTrainers(){
+                return db.Trainers;
+        }
+}
 
 public class CourseRepository : ICourseRepository {
         Database db;
