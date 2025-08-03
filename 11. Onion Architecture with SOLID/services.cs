@@ -5,13 +5,7 @@ using System.Collections.Generic;
 
 
 
-// database
-public class Database {
-        public IList <Student> Students ;
-        public IList <Trainer> Trainers ;
-        public IList <Course> Courses ;
-        
-}
+
 // interfaces
 public interface IStudentRepository {
         void AddStudent(Student student);
