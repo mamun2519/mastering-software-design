@@ -26,7 +26,6 @@ class Program
     {
 
        // Create instances of repositories and services
-        Database db = new Database();
             IStudentRepository studentRepository = new StudentRepository(db);
             ITrainerRepository trainerRepository = new TrainerRepository(db);
             ICourseRepository courseRepository = new CourseRepository(db);
