@@ -22,25 +22,7 @@ using System.Collections.Generic;
 
 
 
-// controllers
-public class StudentController {
-        IStudentService studentService;
-        public StudentController(IStudentService studentService ){
-                    this.studentService = studentService;
-        }
-        public void AddStudent(Student student){
-                studentService.AddStudent(student);
-        }
-        public void RemoveStudent(Student student){
-                studentService.RemoveStudent(student);
-        }
-        public void UpdateStudent(Student student){
-                studentService.UpdateStudent(student);
-        }
-        public IList<Student> GetAllStudents(){
-                return studentService.GetAllStudents();
-        }
-}
+
 
 public class TrainerController {
         ITrainerService trainerService;
