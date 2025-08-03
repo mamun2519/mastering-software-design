@@ -16,9 +16,7 @@ using System.Collections.Generic;
 public class StudentRepository : IStudentRepository {
       
    
-        public void UpdateStudent(Student student){
-                db.Students[db.Students.IndexOf(student)] = student;
-        }
+    
         public IList<Student> GetAllStudents(){
                 return db.Students;
         }
