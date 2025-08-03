@@ -4,11 +4,7 @@ using System.Collections.Generic;
 
 
 
-public class Course {
-        public int CourseId { get; set; }
-        public string Name { get; set; }
-        public string Description { get; set; }
-}
+
 // database
 public class Database {
         public IList <Student> Students ;
